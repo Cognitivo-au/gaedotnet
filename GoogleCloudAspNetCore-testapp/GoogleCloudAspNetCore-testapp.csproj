@@ -9,26 +9,80 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\NewFolder\**" />
-    <Content Remove="wwwroot\NewFolder\**" />
-    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
-    <None Remove="wwwroot\NewFolder\**" />
+    <None Remove="Views\Home\style.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Views\Home\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\css\bootstrap.min.css" />
     <Content Include="wwwroot\css\font-awesome.min.css" />
     <Content Include="wwwroot\css\landing-page.css" />
+    <Content Include="wwwroot\css\style.css" />
     <Content Include="wwwroot\images\banner-bg.jpg" />
+    <Content Include="wwwroot\images\close.png" />
     <Content Include="wwwroot\images\cognitivologo-black.png" />
     <Content Include="wwwroot\images\cognitivologo-white.png" />
     <Content Include="wwwroot\images\dog.png" />
     <Content Include="wwwroot\images\intro-bg.jpg" />
     <Content Include="wwwroot\images\ipad.png" />
+    <Content Include="wwwroot\images\loading.gif" />
+    <Content Include="wwwroot\images\next.png" />
     <Content Include="wwwroot\images\phones.png" />
-    <Content Include="wwwroot\js\bootstrap.min.js" />
+    <Content Include="wwwroot\images\prev.png" />
+    <Content Include="wwwroot\img\cd-top-arrow.svg" />
+    <Content Include="wwwroot\img\icons\cd-top-arrow.svg" />
+    <Content Include="wwwroot\img\icons\Cognitivo-logo-web.png" />
+    <Content Include="wwwroot\img\icons\favicon.png" />
+    <Content Include="wwwroot\img\icons\left-arrow-white.png" />
+    <Content Include="wwwroot\img\icons\nav-dark.png" />
+    <Content Include="wwwroot\img\icons\nav.png" />
+    <Content Include="wwwroot\img\icons\RD-dark.png" />
+    <Content Include="wwwroot\img\icons\RD.png" />
+    <Content Include="wwwroot\img\icons\RD_mobile-dark.png" />
+    <Content Include="wwwroot\img\icons\RD_mobile.png" />
+    <Content Include="wwwroot\img\icons\right-arrow-white.png" />
+    <Content Include="wwwroot\img\left-arrow.png" />
+    <Content Include="wwwroot\img\pics\1020-350.png" />
+    <Content Include="wwwroot\img\pics\350-415-team1.png" />
+    <Content Include="wwwroot\img\pics\350-415-team2.png" />
+    <Content Include="wwwroot\img\pics\350-415-team3.png" />
+    <Content Include="wwwroot\img\pics\500-358.png" />
+    <Content Include="wwwroot\img\pics\562x333-flat.png" />
+    <Content Include="wwwroot\img\pics\900-644-rd.png" />
+    <Content Include="wwwroot\img\pics\900-644.png" />
+    <Content Include="wwwroot\img\pics\analytics_hands.png" />
+    <Content Include="wwwroot\img\pics\CognitivoConsultingLogo.png" />
+    <Content Include="wwwroot\img\pics\complete-rd.png" />
+    <Content Include="wwwroot\img\pics\computer-gal.png" />
+    <Content Include="wwwroot\img\pics\computer-guy.png" />
+    <Content Include="wwwroot\img\pics\computer-stuff.png" />
+    <Content Include="wwwroot\img\pics\computer-white.png" />
+    <Content Include="wwwroot\img\pics\desktop-1.png" />
+    <Content Include="wwwroot\img\pics\desktop-2.png" />
+    <Content Include="wwwroot\img\pics\desktop-3.png" />
+    <Content Include="wwwroot\img\pics\desktop.png" />
+    <Content Include="wwwroot\img\pics\hand_ipad.png" />
+    <Content Include="wwwroot\img\pics\hand_mobile.png" />
+    <Content Include="wwwroot\img\pics\lean_hcd.png" />
+    <Content Include="wwwroot\img\pics\mac-computer.png" />
+    <Content Include="wwwroot\img\pics\rocket_design.png" />
+    <Content Include="wwwroot\img\pics\skills.png" />
+    <Content Include="wwwroot\img\pics\strategy_puzzle.png" />
+    <Content Include="wwwroot\img\pics\team.png" />
+    <Content Include="wwwroot\img\right-arrow.png" />
+    <Content Include="wwwroot\js\jquery.bxslider.min.js" />
     <Content Include="wwwroot\js\jquery.min.js" />
+    <Content Include="wwwroot\js\lightbox-plus-jquery.js" />
+    <Content Include="wwwroot\js\lightbox-plus-jquery.min.js" />
+    <Content Include="wwwroot\js\lightbox-plus-jquery.min.map" />
+    <Content Include="wwwroot\js\lightbox.js" />
+    <Content Include="wwwroot\js\lightbox.min.js" />
+    <Content Include="wwwroot\js\lightbox.min.map" />
+    <Content Include="wwwroot\js\modernizr.js" />
     <Content Include="wwwroot\js\tether.min.js" />
+    <Content Include="wwwroot\js\top.js" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
@@ -49,6 +103,14 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Views\Home\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
