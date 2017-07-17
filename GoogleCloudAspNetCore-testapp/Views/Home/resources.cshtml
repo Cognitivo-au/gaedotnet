@@ -30,7 +30,7 @@
                     <nav>
                         <a href="#" id="menu-icon"></a>
                         <ul>
-                            <li>@Html.ActionLink("Index", "Home")</li>
+                            <li>@Html.ActionLink("Home", "Index")</li>
                             <li><a href="#" class="current">Knowledge & Resources</li>
                             <li>@Html.ActionLink("Our Team", "team")</li>
                             <li>@Html.ActionLink("Connect", "Contact")</li>
@@ -52,15 +52,15 @@
             <!--- Breadcrumbs & Title End -->
         </div>
         <!--- Banner Wrapper End -->
-        <p class="dark">We start each project by gathering the information and client’s requirement, which means lots of client discussions &amp; reseach.  We create strategies based on the outcomes you expect to see for your company.</p>
+        <p class="dark">Below are a number of points of resources and articles to help you build an understanding of our philosophy and methods. If you would like more information on any of the topics below, please do not hessitate to get in contact with us. </p>
 
         <!--- Portfolio Row One Start -->
 
         <section class="one-third-padding">
-            <a id="lightbox-img" href="http://www.cognitivoconsulting.com/2017/07/im-australian-business-whats-digital.html" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="../img/pics/digital_guy.png" alt="" /></a>
+            <a id="lightbox-img" href="http://www.cognitivoconsulting.com/2017/07/im-australian-business-whats-digital.html" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="~/img/pics/digital_guy.png" alt="" /></a>
             <h2>
                 <span>
-                    <a href="index.html">I'm an Australian Business &nbsp;<br>&nbsp; What's Digital ?</a>
+                    <a href="http://www.cognitivoconsulting.com/2017/07/im-australian-business-whats-digital.html" target="_blank">I'm an Australian Business, &nbsp;<br>&nbsp; What's Digital ?</a>
                 </span>
             </h2>
         </section>
@@ -68,53 +68,24 @@
 
 
         <section class="one-third-padding">
-            <a id="lightbox-img" href="https://www.linkedin.com/pulse/bridging-human-computer-data-gap-alan-hsiao" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="../img/pics/StrategicInnovationAndDesignThinking.png" alt="" /></a>
-          
-
+            <a id="lightbox-img" href="http://www.cognitivoconsulting.com/2017/07/strategy-meets-design-thinking.html" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="~/img/pics/StrategicInnovationAndDesignThinking.png" alt="" /></a>
             <h2>
                 <span>
-                    <a href="index.html">Strategy Meets&nbsp;<br>&nbsp;Design Thinking</a>
+                    <a href="http://www.cognitivoconsulting.com/2017/07/strategy-meets-design-thinking.html" target="_blank">Strategy Meets&nbsp;<br>&nbsp;Design Thinking</a>
                 </span>
             </h2>
         </section>
 
 
         <section class="one-third-padding">
-            <a id="lightbox-img" href="https://www.linkedin.com/pulse/bridging-human-computer-data-gap-alan-hsiao" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="../img/pics/robot_hands.png" alt="" /></a>
+            <a id="lightbox-img" href="https://www.linkedin.com/pulse/bridging-human-computer-data-gap-alan-hsiao" target="_blank" data-lightbox="example-set" data-title="Portfolio Project Details"><img src="~/img/pics/robot_hands.png" alt="" /></a>
             <h2>
                 <span>
-                    <a href="index.html">Bridging the Human&nbsp;<br>&nbsp;Computer Data Gap</a>
+                    <a  href="https://www.linkedin.com/pulse/bridging-human-computer-data-gap-alan-hsiao" target="_blank">Bridging the Human Computer Data Gap</a>
                 </span>
             </h2>
         </section>
-        <!--- Portfolio Row One End -->
-        <!--- Portfolio Row Two Start -->
-        <!--      <a class="example-image-link" id="lightbox-img" href="../img/pics/900-644.png" data-lightbox="example-set" data-title="Image Title"><img class="example-image" src="../img/pics/900-644.png" alt=""/></a>
-            </section>
-            <section class="one-third-padding">
-              <a class="example-image-link" id="lightbox-img" href="../img/pics/900-644.png" data-lightbox="example-set" data-title="Portfolio Project Details"><img class="example-image" src="../img/pics/900-644.png" alt=""/></a>
-            </section>
-            <section class="one-third-padding">
-              <a class="example-image-link" id="lightbox-img" href="../img/pics/900-644.png" data-lightbox="example-set" data-title="Portfolio Project Details"><img class="example-image" src="../img/pics/900-644.png" alt=""/></a>
-            </section>
-        <!--- Portfolio Row Two End -->
-        <!--- Portfolio Row Three Start -->
-        @*<section class="left-col">
-            <a class="example-image-link" id="lightbox-img" href="../img/pics/1020-350.png" data-lightbox="example-set" data-title="Image Title"><img class="example-image" src="../img/pics/1020-350.png" alt="" /></a>
-        </section>
-        <section class="sidebar">
-            <p class="dark">We start each project by gathering the information and client’s requirement, which means lots of client discussions &amp; reseach. We start each project by gathering info.</p>
-        </section>*@
-        
-        @*<!--- Portfolio Row Three End -->
-        <div class="clearfix-padding"></div>
-        <!--- Start Page Callout -->
-        <div class="page-callout">
-            <p class="callout-text">Get in touch with us for a free web development quote!</p>
-            <div class="button-holder">
-                <a class="btn" href="contact.php">Contact</a>
-            </div>
-        </div>*@
+     
         <!--- End Page Callout -->
     </div>
     <!--- Wrapper End -->
@@ -126,17 +97,17 @@
             <div class="icon-text">
                 <div class="icon-text-icon">
                     <ul class="footer-nav">
-                        <li><a href="index.html" title="">Home</a></li>
-                        <li><a href="#" title="">Knowledge &amp; Resources</a></li>
-                        <li><a href="#" title="">Our Team</a></li>
-                        <li><a href="#" title="">Contact</a></li>
+                        <li>@Html.ActionLink("Index", "Home")</li>
+                        <li><a href="#" class="current">Knowledge & Resources</li>
+                        <li>@Html.ActionLink("Our Team", "team")</li>
+                        <li>@Html.ActionLink("Connect", "Contact")</li>
                     </ul>
                 </div>
                 <div class="icon-text-text">
                     <ul class="social">
                         <li><a href="mailto:alan.hsiao@cognitivo.com.au" title=""><i class="fa fa-envelope-o" id="email"></i></a></li>
                         <li><a href="https://www.linkedin.com/company-beta/18138073/"><i class="fa fa-linked-in-square" id="linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/cognitivo_al"><i class="fa fa-twitter" id="twitter"></i></a></li>
+                        <li><a href="https://twitter.com/cognitivo_au" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a></li>
                     </ul>
                 </div>
             </div>

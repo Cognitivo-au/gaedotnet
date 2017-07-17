@@ -356,11 +356,9 @@ aside {
 
 /*AH floating text form resources boxes*/
 .one-third-padding h2 {
-position: absolute;
-text-align: left;
-bottom: 250px;
+position: relative;
+text-align: center;
 }
-
 .one-third-padding h2 span {
 color: white;
 font: bold 24px/45px Helvetica, Sans-Serif;
@@ -369,9 +367,15 @@ background: rgb(0, 0, 0); /* fallback color */
 background: rgba(0, 0, 0, 0.7);
 padding: 10px;
 }
-
 .one-third-padding h2 span a {
     color: white;
+}
+
+.one-third-padding h2 span a:hover {
+    opacity: .7;
+}
+.one-third-padding image:hover{
+    opacity: .7;
 }
 
 .icon-wrap {
@@ -766,26 +770,6 @@ footer.second {
         right: 10%;
     }
 
-    .one-third-padding h2 {
-        position: absolute;
-        bottom: 220px;
-        text-align: left;
-    }
-
-    .one-third-padding h2 span {
-        color: white;
-        font: bold 16px/20px Helvetica, Sans-Serif;
-        letter-spacing: -1px;
-        background: rgb(0, 0, 0); /* fallback color */
-        background: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-    }
-    .one-third-padding h2 span a {
-        color: white;
-    }
-}
-
-
 
 @media screen and (max-width: 768px) {
     h2 {
@@ -960,23 +944,6 @@ footer.second {
         bottom: 20px;
     }
 
-    .one-third-padding h2 {
-        position: absolute;
-        text-align: left;
-        bottom: 10px;
-    }
-    .one-third-padding h2 span {
-        color: white;
-        font: bold 12px/24px Helvetica, Sans-Serif;
-        letter-spacing: -1px;
-        background: rgb(0, 0, 0); /* fallback color */
-        background: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-    }
-
-        .one-third-padding h2 span a {
-            color: white;
-        }
 }
 
 @media screen and (max-width: 478px) {

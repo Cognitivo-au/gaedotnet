@@ -49,39 +49,71 @@
     <Content Include="wwwroot\img\icons\RD_mobile.png" />
     <Content Include="wwwroot\img\icons\right-arrow-white.png" />
     <Content Include="wwwroot\img\left-arrow.png" />
-    <Content Include="wwwroot\img\pics\1020-350.png" />
+    <Content Include="wwwroot\img\pics\1020-350.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\350-415-team1.png" />
     <Content Include="wwwroot\img\pics\350-415-team2.png" />
     <Content Include="wwwroot\img\pics\350-415-team3.png" />
-    <Content Include="wwwroot\img\pics\500-358.png" />
-    <Content Include="wwwroot\img\pics\562x333-flat.png" />
-    <Content Include="wwwroot\img\pics\900-644-rd.png" />
+    <Content Include="wwwroot\img\pics\500-358.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\562x333-flat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\900-644-rd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\900-644.png" />
     <Content Include="wwwroot\img\pics\Alan_profile.jpg" />
     <Content Include="wwwroot\img\pics\analytics_hands.png" />
     <Content Include="wwwroot\img\pics\CognitivoConsultingLogo.png" />
     <Content Include="wwwroot\img\pics\collaboration_hands.png" />
-    <Content Include="wwwroot\img\pics\complete-rd.png" />
-    <Content Include="wwwroot\img\pics\computer-gal.png" />
+    <Content Include="wwwroot\img\pics\complete-rd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\computer-gal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\computer-guy.png" />
-    <Content Include="wwwroot\img\pics\computer-stuff.png" />
-    <Content Include="wwwroot\img\pics\computer-white.png" />
+    <Content Include="wwwroot\img\pics\computer-stuff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\computer-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\desktop-1.png" />
     <Content Include="wwwroot\img\pics\desktop-2.png" />
     <Content Include="wwwroot\img\pics\desktop-3.png" />
-    <Content Include="wwwroot\img\pics\desktop.png" />
+    <Content Include="wwwroot\img\pics\desktop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\Digital_guy.png" />
-    <Content Include="wwwroot\img\pics\digital_strategy.jpg" />
+    <Content Include="wwwroot\img\pics\digital_strategy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\hand_ipad.png" />
-    <Content Include="wwwroot\img\pics\hand_mobile.png" />
+    <Content Include="wwwroot\img\pics\hand_mobile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\lean_hcd.png" />
-    <Content Include="wwwroot\img\pics\mac-computer.png" />
-    <Content Include="wwwroot\img\pics\robot_hands.png" />
-    <Content Include="wwwroot\img\pics\rocket_design.png" />
-    <Content Include="wwwroot\img\pics\skills.png" />
+    <Content Include="wwwroot\img\pics\mac-computer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\robot_hands.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\rocket_design.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\img\pics\skills.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\StrategicInnovationAndDesignThinking.png" />
     <Content Include="wwwroot\img\pics\strategy_puzzle.png" />
-    <Content Include="wwwroot\img\pics\team.png" />
+    <Content Include="wwwroot\img\pics\team.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\pics\Vinay_profile.jpg" />
     <Content Include="wwwroot\img\right-arrow.png" />
     <Content Include="wwwroot\js\jquery.bxslider.min.js" />
@@ -129,6 +161,68 @@
     <Reference Include="System.Net">
       <HintPath>..\..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.Net.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot/img\pics\350-415-team1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\350-415-team2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\350-415-team3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\900-644.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\Alan_profile.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\analytics_hands.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\CognitivoConsultingLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\cog_logo_mobile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\collaboration_hands.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\computer-guy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\desktop-1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\desktop-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\desktop-3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\Digital_guy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\hand_ipad.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\lean_hcd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\StrategicInnovationAndDesignThinking.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\strategy_puzzle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\Thumbs.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot/img\pics\Vinay_profile.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Update="Views\Home\style.css">

@@ -69,46 +69,82 @@
 
         @using (Html.BeginForm())
         {
-           
+
             <section class="two-third" class="contact">
                 <div id="contact-area">
                     <div id="contact" class="section">
-                         <div class="ctn-contact">
+                        <div class="ctn-contact">
 
-                                @Html.LabelFor(model => model.FirstName, "First Name")
-                                @Html.EditorFor(model => model.FirstName)
-                                @Html.ValidationMessageFor(model => model.FirstName)
-
-
-                                
-                               
-                                @Html.LabelFor(model => model.LastName, "Last Name")
-                                @Html.EditorFor(model => model.LastName)
-
-                         
-                                @Html.LabelFor(model => model.Email, "Email")
-                                @Html.EditorFor(model => model.Email)
+                            @Html.LabelFor(model => model.FirstName, "First Name")
+                            @Html.EditorFor(model => model.FirstName)
+                            @Html.ValidationMessageFor(model => model.FirstName)
 
 
-                                @Html.LabelFor(model => model.Comment, "Comments")
-                               
-                                @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })
-
-                             <div class="clearfix"></div>
-                                &nbsp;
-                                <input type="submit" class="subbutton" value="submit" />
 
 
-                            </div>
+                            @Html.LabelFor(model => model.LastName, "Last Name")
+                            @Html.EditorFor(model => model.LastName)
+
+
+                            @Html.LabelFor(model => model.Email, "Email")
+                            @Html.EditorFor(model => model.Email)
+
+
+                            @Html.LabelFor(model => model.Comment, "Comments")
+
+                            @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })
+
+                            <div class="clearfix"></div>
+                            &nbsp;
+                            <input type="submit" class="subbutton" value="submit" />
+
+
+                        </div>
                     </div>
                 </div>
             </section>
-               
 
-                               
 
-           }
 
+
+        }
+
+        <!--- Start Footer -->
+        <footer>
+            <!--- Banner Wrapper Start -->
+            <div id="banner-wrapper">
+                <div class="icon-text">
+                    <div class="icon-text-icon">
+                        <ul class="footer-nav">
+                            <li>@Html.ActionLink("Home", "Index")</li>
+                            <li>@Html.ActionLink("Knowledge & Resources", "Resources")</li>
+                            <li>@Html.ActionLink("Our Team", "team")</li>
+                            <li><a href="#" class="current">Connect</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon-text-text">
+                        <ul class="social">
+                            <li><a href="mailto:email@website.com" title=""><i class="fa fa-envelope-o" id="email"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company-beta/18138073/"><i class="fa fa-linked-in-square" id="google-plus"></i></a></li>
+                            <li><a href="https://twitter.com/cognitivo_au" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--- Banner Wrapper End -->
+        </footer>
+        <footer class="second">
+            <p>&copy; Cognitivo Consulting Pty. Ltd.</p>
+        </footer>
+        <!--- End Footer -->
+        <!--- Top Scroll Start -->
+        <a href="#0" class="cd-top">Top</a>
+        <script src="js/top.js"></script> <!-- Gem jQuery -->
+        <script src="js/modernizr.js"></script>
+        <!--- Top Scroll End -->
+    </div>
+
+        
 </body>
 
 @*@Html.LabelFor(model => model.FirstName, "First Name", htmlAttributes: new { @class = "label" })
