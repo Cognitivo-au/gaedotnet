@@ -1,17 +1,60 @@
-﻿@{
+﻿@model GoogleCloudAspNetCore.testapp.Models.ContactModels
+
+@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognitivo Consulting | Digital | Design | Data</title>
+    <link href="~/css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="img/icons/Cognitivo-logo-web.png" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <meta name="description" content="">
+</head>
+<body>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <h1>contact us</h1>
+            @using (Html.BeginForm())
+            {
+
+
+                <div class="row">
+                   
+                    @*@Html.LabelFor(model => model.FirstName, "First Name", htmlAttributes: new { @class = "label" })
+                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })*@ 
+                    
+                    @Html.LabelFor(model => model.FirstName, "First Name")
+
+                    @Html.EditorFor(model => model.FirstName)
+                    @Html.ValidationMessageFor(model => model.FirstName)
+
+                </div>
+                <div class="row">
+                    @Html.LabelFor(model => model.LastName, "Last Name")
+                    @Html.EditorFor(model => model.LastName)
+                </div>
+                        <div class="row">
+                            @Html.LabelFor(model => model.Email, "Email")
+                            @Html.EditorFor(model => model.Email)
+                        </div>
+                        <div class="row">
+                            @Html.LabelFor(model => model.Comment, "Comments")
+                            @Html.EditorFor(model => model.Comment)
+                        </div>
+                        <div class="contact-us">
+                            <input type="submit" class="subbutton" value="submit" />
+                            <input type="reset" class="subbutton" value="reset" />
+                        </div>
+
+            }
+
+</body>

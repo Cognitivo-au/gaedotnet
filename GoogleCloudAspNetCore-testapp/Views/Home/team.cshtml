@@ -1,0 +1,130 @@
+﻿
+
+
+@{
+    ViewData["Title"] = "team";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognitivo Consulting | Team | People | Experts</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="~/img/icons/Cognitivo-logo-web.png" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <meta name="description" content="">
+</head>
+<body>
+    <!--- Wrapper Start -->
+    <div id="wrapper">
+        <!--- Banner Wrapper Start -->
+        <div id="banner-wrapper">
+            <!--- Header Start -->
+            <header>
+                <div id="header-inner">
+                    <a href="index.html" id="logo" title=""></a>
+                    <nav>
+                        <a href="#" id="menu-icon"></a>
+                        <ul>
+                            <li>@Html.ActionLink("Home", "index")</li>
+                            <li><a href="#">Knowledge & Resources</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="#">Connect</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--- Header End -->
+            <!--- Breadcrumbs & Title Start -->
+            <section class="breadcrumbs">
+                <h4>Our Team</h4>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </section>
+            <div id="title">
+                <h2 class="dark">Our Philosophy</h2>
+            </div>
+            <!--- Breadcrumbs & Title End -->
+        </div>
+        <!--- Banner Wrapper End -->
+        <!--- Start Heading, Text, Image -->
+        <section class="left-col">
+            <p class="dark" style="text-indent: 6%;">We believe the key ingredient and hardest part of a digital transformation is getting the right mindset and the top of the house and having that permeate into the culture of your organisation. Our <b>collaborative approach </b> aims to <b>help you build the right strategy, skills and oragnisation to be able to execute on a digital agenda that is your own.</b></p>
+
+        </section>
+        <section class="sidebar">
+            <img src="~/img/pics/collaboration_hands.png">
+        </section>
+
+        <!--- End Heading, Text, Image -->
+        <div id="title">
+            <h2 class="dark">Our Founders</h2>
+        </div>
+        <div class="clearfix"></div>
+        <!--- Start Profile Section -->
+        <div class="icon-text">
+            <div class="icon-text-icon">
+                <img src="~/img/pics/Alan_profile.jpg" style="border: 2px solid #E2E2E2;">
+            </div>
+            <div class="icon-text-text">
+                <h3 class="dark">Alan Hsiao . <a href="https://www.linkedin.com/in/alan-hsiao/" target="_blank"><i class="fa fa-linkedin" id="linkedin"></i></a></h3>
+                <p class="dark">Alan has held senior roles within banking &amp; management consulting. He extensive experience in strategy, risk and data management. Through his career he has shaped and led delivery of multi-million dollar transformtion programs as well as led short design-centric initiatives.</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="icon-text">
+            <div class="icon-text-icon">
+                <img src="~/img/pics/vinay_profile.jpg" style="border: 2px solid #E2E2E2;">
+            </div>
+            <div class="icon-text-text">
+                <h3 class="dark">Vinay Samineni  . <a href="https://www.linkedin.com/in/vinaysamineni/" target="_blank"><i class="fa fa-linkedin" id="linkedin"></i></a></h3>
+                <p class="dark">Vinay is leader in cloud and big data technologies with a career spanning some of Australia's largest financial institutions and government agencies. He has an extensive track record leading the design, architecture and development of complex digital, data and integration platforms. </p>
+            </div>
+        </div>
+        <!--- End Profile Section -->
+    </div>
+    <!--- Wrapper End -->
+    <div class="clearfix"></div>
+    <!--<img src="img/pics/team.png" >-->
+    <!--- Start Footer -->
+    <footer>
+        <!--- Banner Wrapper Start -->
+        <div id="banner-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon">
+                    <ul class="footer-nav">
+                        <li><a href="index.html" title="">Home</a></li>
+                        <li><a href="#" title="">Knowledge &amp; Resources</a></li>
+                        <li><a href="#" title="">Our Team</a></li>
+                        <li><a href="#" title="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="icon-text-text">
+                    <ul class="social">
+                        <li><a href="mailto:alan.hsiao@cognitivo.com.au" title=""><i class="fa fa-envelope-o" id="email"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company-beta/18138073/"><i class="fa fa-linked-in-square" id="google-plus"></i></a></li>
+                        <li><a href="https://twitter.com/cognitivo_al"><i class="fa fa-twitter" id="twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--- Banner Wrapper End -->
+    </footer>
+    <footer class="second">
+        <p>&copy; Cognitivo Consulting Pty. Ltd.</p>
+    </footer>
+    <!--- End Footer -->
+    <!--- Top Scroll Start -->
+    <a href="#0" class="cd-top">Top</a>
+    <script src="js/top.js"></script> <!-- Gem jQuery -->
+    <script src="js/modernizr.js"></script>
+    <!--- Top Scroll End -->
+</body>
+</html>
