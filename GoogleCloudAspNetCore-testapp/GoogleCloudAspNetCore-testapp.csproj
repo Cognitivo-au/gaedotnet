@@ -70,12 +70,16 @@
     <Content Include="wwwroot\img\pics\desktop-2.png" />
     <Content Include="wwwroot\img\pics\desktop-3.png" />
     <Content Include="wwwroot\img\pics\desktop.png" />
+    <Content Include="wwwroot\img\pics\Digital_guy.png" />
+    <Content Include="wwwroot\img\pics\digital_strategy.jpg" />
     <Content Include="wwwroot\img\pics\hand_ipad.png" />
     <Content Include="wwwroot\img\pics\hand_mobile.png" />
     <Content Include="wwwroot\img\pics\lean_hcd.png" />
     <Content Include="wwwroot\img\pics\mac-computer.png" />
+    <Content Include="wwwroot\img\pics\robot_hands.png" />
     <Content Include="wwwroot\img\pics\rocket_design.png" />
     <Content Include="wwwroot\img\pics\skills.png" />
+    <Content Include="wwwroot\img\pics\StrategicInnovationAndDesignThinking.png" />
     <Content Include="wwwroot\img\pics\strategy_puzzle.png" />
     <Content Include="wwwroot\img\pics\team.png" />
     <Content Include="wwwroot\img\pics\Vinay_profile.jpg" />

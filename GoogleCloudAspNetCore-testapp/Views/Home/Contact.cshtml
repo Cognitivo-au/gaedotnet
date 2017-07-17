@@ -21,40 +21,97 @@
     <meta name="description" content="">
 </head>
 <body>
+    <!--- Wrapper Start -->
+    <div id="wrapper">
+        <!--- Banner Wrapper Start -->
+        <div id="banner-wrapper">
+            <!--- Header Start -->
+            <header>
+                <div id="header-inner">
+                    <a href="index.html" id="logo" title=""></a>
+                    <nav>
+                        <a href="#" id="menu-icon"></a>
+                        <ul>
+                            <li>@Html.ActionLink("Home", "Index")</li>
+                            <li>@Html.ActionLink("Knowledge & Resources", "Resources")</li>
+                            <li>@Html.ActionLink("Our Team", "team")</li>
+                            <li><a href="#" class="current">Connect</a></li>
 
-    <h1>contact us</h1>
-            @using (Html.BeginForm())
-            {
-
-
-                <div class="row">
-                   
-                    @*@Html.LabelFor(model => model.FirstName, "First Name", htmlAttributes: new { @class = "label" })
-                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })*@ 
-                    
-                    @Html.LabelFor(model => model.FirstName, "First Name")
-
-                    @Html.EditorFor(model => model.FirstName)
-                    @Html.ValidationMessageFor(model => model.FirstName)
-
+                        </ul>
+                    </nav>
                 </div>
-                <div class="row">
-                    @Html.LabelFor(model => model.LastName, "Last Name")
-                    @Html.EditorFor(model => model.LastName)
+            </header>
+            <!--- Header End -->
+            <!--- Breadcrumbs & Title Start-->
+            <section class="breadcrumbs">
+                <h4>Contact Us</h4>
+                <div class="icon">
+                    <i class="fa fa-envelope"></i>
                 </div>
-                        <div class="row">
-                            @Html.LabelFor(model => model.Email, "Email")
-                            @Html.EditorFor(model => model.Email)
-                        </div>
-                        <div class="row">
-                            @Html.LabelFor(model => model.Comment, "Comments")
-                            @Html.EditorFor(model => model.Comment)
-                        </div>
-                        <div class="contact-us">
-                            <input type="submit" class="subbutton" value="submit" />
-                            <input type="reset" class="subbutton" value="reset" />
-                        </div>
+            </section>
+            <div id="title">
+                <h2 class="dark">Get In Touch</h2>
+            </div>
+            <!--- Breadcrumbs & Title End -->
+        </div>
+        <!--- Banner Wrapper End -->
+        <!--- Left Column & Sidebar Start -->
+        <section class="left-col">
+            <p class="dark" style="text-indent: 6%;">Let us know if you would like to speak to us on what we do, our approach or you would like access to further information or resources.</p>
+        </section>
+        <section class="sidebar">
+            <img src="../img/pics/562x333-flat.png">
+        </section>
+        <!--- Left Column & Sidebar End -->
+        <div class="clearfix"></div>
+        <!-- Start Contact Form -->
 
-            }
+
+        @using (Html.BeginForm())
+        {
+           
+            <section class="two-third" class="contact">
+                <div id="contact-area">
+                    <div id="contact" class="section">
+                         <div class="ctn-contact">
+
+                                @Html.LabelFor(model => model.FirstName, "First Name")
+                                @Html.EditorFor(model => model.FirstName)
+                                @Html.ValidationMessageFor(model => model.FirstName)
+
+
+                                
+                               
+                                @Html.LabelFor(model => model.LastName, "Last Name")
+                                @Html.EditorFor(model => model.LastName)
+
+                         
+                                @Html.LabelFor(model => model.Email, "Email")
+                                @Html.EditorFor(model => model.Email)
+
+
+                                @Html.LabelFor(model => model.Comment, "Comments")
+                               
+                                @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })
+
+                             <div class="clearfix"></div>
+                                &nbsp;
+                                <input type="submit" class="subbutton" value="submit" />
+
+
+                            </div>
+                    </div>
+                </div>
+            </section>
+               
+
+                               
+
+           }
 
 </body>
+
+@*@Html.LabelFor(model => model.FirstName, "First Name", htmlAttributes: new { @class = "label" })
+    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "textarea", type = "textarea" } })*@
+
+
