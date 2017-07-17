@@ -115,7 +115,8 @@ namespace GoogleCloudAspNetCore_testapp.Controllers
                         client.Authenticate("vinay.samineni@gmail.com", "ganesh00");
                         client.Send(mimeMessage);
                         client.Disconnect(true);
-                        return View("Index");
+                        return RedirectToAction("Index");
+                        
                     }
                     /* MailMessage msg = new System.Net.Mail.MailMessage();
                     SmtpClient smtp = new SmtpClient();
