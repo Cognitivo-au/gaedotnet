@@ -155,7 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\skills.cshtml" />
     <None Include="Views\Home\team.cshtml" />
   </ItemGroup>
   <ItemGroup>
