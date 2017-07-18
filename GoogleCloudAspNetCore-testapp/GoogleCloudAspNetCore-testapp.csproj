@@ -27,6 +27,12 @@
     <None Remove="Views\Home\teat.html" />
     <None Remove="wwwroot\css\jquery.bxslider.css" />
     <None Remove="wwwroot\css\lightbox.css" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Remove="wwwroot\fonts\FontAwesome.otf" />
     <None Remove="wwwroot\img\pics\cog_logo_mobile.png" />
     <None Remove="wwwroot\img\pics\Thumbs.db" />
   </ItemGroup>
@@ -50,17 +56,36 @@
     <Content Include="wwwroot\css\style.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="wwwroot\images\banner-bg.jpg" />
-    <Content Include="wwwroot\images\close.png" />
-    <Content Include="wwwroot\images\cognitivologo-black.png" />
-    <Content Include="wwwroot\images\cognitivologo-white.png" />
-    <Content Include="wwwroot\images\dog.png" />
-    <Content Include="wwwroot\images\intro-bg.jpg" />
-    <Content Include="wwwroot\images\ipad.png" />
-    <Content Include="wwwroot\images\loading.gif" />
-    <Content Include="wwwroot\images\next.png" />
-    <Content Include="wwwroot\images\phones.png" />
-    <Content Include="wwwroot\images\prev.png" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\prev.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\cd-top-arrow.svg" />
     <Content Include="wwwroot\img\icons\cd-top-arrow.svg" />
     <Content Include="wwwroot\img\icons\Cognitivo-logo-web.png" />
