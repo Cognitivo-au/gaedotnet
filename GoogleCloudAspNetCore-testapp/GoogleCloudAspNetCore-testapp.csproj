@@ -1,41 +1,91 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputType>exe</OutputType>
-  </PropertyGroup>
+
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
-    <ApplicationIcon />
-    <Win32Resource />
-    <OutputTypeEx>exe</OutputTypeEx>
-    <StartupObject />
+
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\Home\teat.html" />
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\bootstrap.min.css" />
-    <Content Include="wwwroot\css\font-awesome.min.css" />
-    <Content Include="wwwroot\css\landing-page.css" />
-    <Content Include="wwwroot\css\style.css" />
-    <Content Include="wwwroot\images\banner-bg.jpg" />
-    <Content Include="wwwroot\images\close.png" />
-    <Content Include="wwwroot\images\cognitivologo-black.png" />
-    <Content Include="wwwroot\images\cognitivologo-white.png" />
-    <Content Include="wwwroot\images\dog.png" />
-    <Content Include="wwwroot\images\intro-bg.jpg" />
-    <Content Include="wwwroot\images\ipad.png" />
-    <Content Include="wwwroot\images\loading.gif" />
-    <Content Include="wwwroot\images\next.png" />
-    <Content Include="wwwroot\images\phones.png" />
-    <Content Include="wwwroot\images\prev.png" />
+    <None Remove="Views\Home\Contact.cshtml" />
+    <None Remove="Views\Home\Index.cshtml" />
+    <None Remove="Views\Home\resources.cshtml" />
+    <None Remove="Views\Home\teat.html" />
+    <None Remove="wwwroot\css\jquery.bxslider.css" />
+    <None Remove="wwwroot\css\lightbox.css" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Remove="wwwroot\fonts\FontAwesome.otf" />
+    <None Remove="wwwroot\img\pics\cog_logo_mobile.png" />
+    <None Remove="wwwroot\img\pics\Thumbs.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Home\Contact.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\resources.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\css\font-awesome.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\css\jquery.bxslider.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\css\lightbox.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\css\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\prev.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\img\cd-top-arrow.svg" />
     <Content Include="wwwroot\img\icons\cd-top-arrow.svg" />
     <Content Include="wwwroot\img\icons\Cognitivo-logo-web.png" />
@@ -50,70 +100,72 @@
     <Content Include="wwwroot\img\icons\right-arrow-white.png" />
     <Content Include="wwwroot\img\left-arrow.png" />
     <Content Include="wwwroot\img\pics\1020-350.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\350-415-team1.png" />
     <Content Include="wwwroot\img\pics\350-415-team2.png" />
     <Content Include="wwwroot\img\pics\350-415-team3.png" />
     <Content Include="wwwroot\img\pics\500-358.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\562x333-flat.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\900-644-rd.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\900-644.png" />
     <Content Include="wwwroot\img\pics\Alan_profile.jpg" />
     <Content Include="wwwroot\img\pics\analytics_hands.png" />
     <Content Include="wwwroot\img\pics\CognitivoConsultingLogo.png" />
+    <Content Include="wwwroot\img\pics\cog_logo_mobile.png" />
     <Content Include="wwwroot\img\pics\collaboration_hands.png" />
     <Content Include="wwwroot\img\pics\complete-rd.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\computer-gal.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\computer-guy.png" />
     <Content Include="wwwroot\img\pics\computer-stuff.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\computer-white.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\desktop-1.png" />
     <Content Include="wwwroot\img\pics\desktop-2.png" />
     <Content Include="wwwroot\img\pics\desktop-3.png" />
     <Content Include="wwwroot\img\pics\desktop.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\Digital_guy.png" />
     <Content Include="wwwroot\img\pics\digital_strategy.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\hand_ipad.png" />
     <Content Include="wwwroot\img\pics\hand_mobile.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\lean_hcd.png" />
     <Content Include="wwwroot\img\pics\mac-computer.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\robot_hands.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\rocket_design.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\skills.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\img\pics\StrategicInnovationAndDesignThinking.png" />
     <Content Include="wwwroot\img\pics\strategy_puzzle.png" />
     <Content Include="wwwroot\img\pics\team.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="wwwroot\img\pics\Thumbs.db" />
     <Content Include="wwwroot\img\pics\Vinay_profile.jpg" />
     <Content Include="wwwroot\img\right-arrow.png" />
     <Content Include="wwwroot\js\jquery.bxslider.min.js" />
@@ -150,9 +202,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\skills.cshtml" />
-    <None Include="Views\Home\team.cshtml" />
+    <Content Include="Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\team.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core">
@@ -222,6 +277,66 @@
     </Content>
     <Content Update="wwwroot/img\pics\Vinay_profile.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\350-415-team1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\350-415-team2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\350-415-team3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\900-644.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\Alan_profile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\analytics_hands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\CognitivoConsultingLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\cog_logo_mobile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\collaboration_hands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\computer-guy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\desktop-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\desktop-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\desktop-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\Digital_guy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\hand_ipad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\lean_hcd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\StrategicInnovationAndDesignThinking.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\strategy_puzzle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\Thumbs.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pics\Vinay_profile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

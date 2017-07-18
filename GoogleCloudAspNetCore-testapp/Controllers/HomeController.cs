@@ -154,7 +154,6 @@ namespace GoogleCloudAspNetCore_testapp.Controllers
             {
                 return View();
             }
-            return View();
         }
     }
 }

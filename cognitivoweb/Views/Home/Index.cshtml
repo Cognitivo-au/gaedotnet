@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "Index";
 }
 
 <!DOCTYPE html>
@@ -8,11 +8,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cognitivo Consulting is a digital and data advisory firm based in Sydney, looking to help Australian businesses transform digitally.">
+    <meta name="keywords" content="digital, consulting" />
+    <meta name="robots" content="index, follow" />
+    <meta name="DC.title" content="Digital and data consultancy Sydney" />
     <title>Cognitivo Consulting | Digital | Design | Data</title>
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="~/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="img/icons/Cognitivo-logo-web.png" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="~/img/icons/Cognitivo-logo-web.png" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -30,11 +34,11 @@
                     <nav>
                         <a href="#" id="menu-icon"></a>
                         <ul>
-                            <li><a href="index.html" class="current">Home111111</a></li>
-                            <li><a href="portfolio.html">Knowledge & Resources</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Connect</a></li>
-                            <li>@Html.ActionLink("About", "About")</a></li>
+                            <li><a href="#" class="current">Home</a></li>
+                            <li>@Html.ActionLink("Knowledge & Resources", "Resources")</li>
+                            <li>@Html.ActionLink("Our Team", "team")</li>
+                            <li>@Html.ActionLink("Connect", "Contact")</li>
+
                         </ul>
                     </nav>
                 </div>
@@ -45,9 +49,9 @@
             <div class="slide-wrap">
                 <section class="slider">
                     <ul class="slider1">
-                        <li><img src="img/pics/desktop-1.png" title="" /></li>
-                        <li><img src="img/pics/desktop-2.png" title="" /></li>
-                        <li><img src="img/pics/desktop-3.png" title="" /></li>
+                        <li><img src="~/img/pics/desktop-1.png" title="" /></li>
+                        <li><img src="~/img/pics/desktop-2.png" title="" /></li>
+                        <li><img src="~/img/pics/desktop-3.png" title="" /></li>
                     </ul>
                 </section>
             </div>
@@ -109,7 +113,7 @@
             </p>
         </section>
         <section class="sidebar">
-            <img src="img/pics/computer-white.png">
+            <img src="~/img/pics/computer-white.png">
         </section>
 
         <!--- Left Column & Sidebar End -->
@@ -171,21 +175,21 @@
         <h3 class="darkleft">How we need your needs</h3>
         <section class="one-third-padding">
             <h3 class="dark">Digital Strategy Advisory</h3>
-            <img src="img/pics/strategy_puzzle.png">
+            <img src="~/img/pics/strategy_puzzle.png">
             <p class="dark">
                 We start by gaining an understand your current strategic objectives in order to help you build a digital blueprint and an organisational culture capable of iterative innovation.
             </p>
         </section>
         <section class="one-third-padding">
             <h3 class="dark">Lean Innovation &amp; Design Thinking</h3>
-            <img src="img/pics/lean_hcd.png">
+            <img src="~/img/pics/lean_hcd.png">
             <p class="dark">
                 We help incubate ideas within your roadmap through build / measure / learn iterations to gain customer input as early as possible. We also practice human centred design principles to narrow in on the sweet spot between desirability, commercial viability and technical feasibility.
             </p>
         </section>
         <section class="one-third-padding">
             <h3 class="dark">Data, Analytics &amp; Machine Learning</h3>
-            <img src="img/pics/analytics_hands.png">
+            <img src="~/img/pics/analytics_hands.png">
             <p class="dark">
                 We utilise advanced data analysis techniques to gather customer insights / sentiment to frame and test your offerings. We can also help you utilise you data to improve operational efficiency but also to wrap data around your products to make them stickier.
             </p>
@@ -209,17 +213,17 @@
             <div class="icon-text">
                 <div class="icon-text-icon">
                     <ul class="footer-nav">
-                        <li><a href="index.html" title="">Home</a></li>
-                        <li><a href="#" title="">Knowledge &amp; Resources</a></li>
-                        <li><a href="#" title="">Our Team</a></li>
-                        <li><a href="#" title="">Contact</a></li>
+                        <li><a href="#" class="current">Home</a></li>
+                        <li>@Html.ActionLink("Knowledge & Resources", "Resources")</li>
+                        <li>@Html.ActionLink("Our Team", "team")</li>
+                        <li>@Html.ActionLink("Connect", "Contact")</li>
                     </ul>
                 </div>
                 <div class="icon-text-text">
                     <ul class="social">
                         <li><a href="mailto:email@website.com" title=""><i class="fa fa-envelope-o" id="email"></i></a></li>
                         <li><a href="https://www.linkedin.com/company-beta/18138073/"><i class="fa fa-linked-in-square" id="google-plus"></i></a></li>
-                        <li><a href="https://twitter.com/cognitivo_al"><i class="fa fa-twitter" id="twitter"></i></a></li>
+                        <li><a href="https://twitter.com/cognitivo_au" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
